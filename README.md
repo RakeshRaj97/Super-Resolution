@@ -184,3 +184,4 @@ sh demo.sh
 * About PyTorch 1.0.0
   * We support PyTorch 1.0.0. If you prefer the previous versions of PyTorch, use legacy branches.
   * ``--ext bin`` is not supported. Also, please erase your bin files with ``--ext sep-reset``. Once you successfully build those bin files, you can remove ``-reset`` from the argument.
+# gittest
