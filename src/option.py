@@ -19,8 +19,7 @@ parser.add_argument('--seed', type=int, default=1,
                     help='random seed')
 
 # Data specifications
-parser.add_argument('--dir_data', type=str, default='../../../dataset',
-                    help='dataset directory')
+parser.add_argument('--dir_data', type=str, default='../../../dataset',  help='dataset directory')
 parser.add_argument('--dir_demo', type=str, default='../test',
                     help='demo image directory')
 parser.add_argument('--data_train', type=str, default='DIV2K',
@@ -29,7 +28,7 @@ parser.add_argument('--data_test', type=str, default='DIV2K',
                     help='test dataset name')
 parser.add_argument('--data_range', type=str, default='1-800/801-810',
                     help='train/test data range')
-parser.add_argument('--ext', type=str, default='sep',
+parser.add_argument('--ext', type=str, default='sep-reset',
                     help='dataset file extension')
 parser.add_argument('--scale', type=str, default='4',
                     help='super resolution scale')
@@ -76,6 +75,7 @@ parser.add_argument('--RDNkSize', type=int, default=3,
 parser.add_argument('--RDNconfig', type=str, default='B',
                     help='parameters config of RDN. (Use in RDN)')
 
+# Option for Residual channel attention network (RCAN)
 # Option for Residual channel attention network (RCAN)
 parser.add_argument('--n_resgroups', type=int, default=10,
                     help='number of residual groups')
@@ -156,6 +156,5 @@ if args.epochs == 0:
 for arg in vars(args):
     if vars(args)[arg] == 'True':
         vars(args)[arg] = True
-    elif vars(args)[arg] == 'False':
         vars(args)[arg] = False
 

@@ -1,6 +1,6 @@
 # EDSR baseline model (x2) + JPEG augmentation
 #python main.py --model EDSR --scale 2 --patch_size 96 --save edsr_baseline_x2 --reset --epochs 5 --batch size 1 --ext sep_reset --dir_data '../dataset'
-#python  main.py --model EDSR --scale 2 --patch_size 48 --save edsr_baseline_x2 --reset --epochs 20 --batch_size 16 --lr 0.0001 --ext sep --dir_data '../landmass_new' --save_results 
+#python  main.py --model EDSR --scale 2 --patch_size 48 --save edsr_baseline_x2 --reset --epochs 20 --batch_size 16 --lr 0.0001 --ext sep --dir_data '../landmass' --save_results 
 #python main.py --model EDSR --scale 2 --patch_size 96 --save edsr_baseline_x2 --reset --data_train DIV2K+DIV2K-Q75 --data_test DIV2K+DIV2K-Q75
 
 #python main.py --model EDSR --scale 2 --patch_size 96 --reset --epochs 20 --batch_size 16 --ext sep_reset --dir_data '../landmass' --save edsr_baseline_x2 --n_resblocks 32 --n_feats 256 --res_scale 0.1 --lr 0.0001 --save_results
@@ -32,7 +32,7 @@
 #python main.py --data_test Set5+Set14+B100+Urban100+DIV2K --data_range 801-900 --scale 4 --n_resblocks 32 --n_feats 256 --res_scale 0.1 --pre_train download --test_only --self_ensemble
 
 # Test your own images
-python main.py --pre_train ../experiment/model-74000.data-00000-of-00001 --n_resblocks 32 --n_feats 64 --res_scale 0.1 --data_test Demo --scale 2 --test_only --save_results
+python main.py --pre_train ../experiment/edsr_baseline_x2/model/model_best.pt --n_resblocks 32 --n_feats 64 --res_scale 0.1 --data_test Demo --scale 2 --test_only --save_results
 
 
 # Advanced - Test with JPEG images 

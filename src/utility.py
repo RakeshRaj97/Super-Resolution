@@ -98,8 +98,8 @@ class checkpoint():
         print(log)
         self.log_file.write(log + '\n')
         if refresh:
-            self.log_file.close()
-            self.log_file = open(self.get_path('log.txt'), 'a')
+           self.log_file.close()
+           self.log_file = open(self.get_path('log.txt'), 'a')
 
     def done(self):
         self.log_file.close()
