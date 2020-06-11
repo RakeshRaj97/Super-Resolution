@@ -57,7 +57,7 @@ Create two new directories `\MTF_Images` and `\MTF_Output` under the `\IQA` fold
 
 Run the file `mtf_to_compute_directory.py` using the command `python mtf_to_compute_directory.py`. The output graphs are stored in `\MTF_Output`folder
 
-# Training the Model
+# Training the EDSR Model
 
 Uncomment line 3 in `demo.sh` under `\edsr\src`. Change the `--dir_data` argument to the path where the dataset is located. 
 
