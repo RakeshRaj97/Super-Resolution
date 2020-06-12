@@ -9,6 +9,8 @@ module load gcc/6.4.0
 conda create -n p4 python=3.6
 source activate p4
 conda install pytorch==1.2.0 torchvision==0.4.0 cudatoolkit=10.0 -c pytorch
+conda install opencv
+pip install pandas
 conda install pillow=6.2.1 -y
 pip install matplotlib
 pip install utility

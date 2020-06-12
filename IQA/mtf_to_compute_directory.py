@@ -49,7 +49,10 @@ class ROI_selection(object):
 
     def __init__(self, filename):
         self.filename = filename
-        self.image_data =cv2.imread(filename, 0)
+        #self.image_data =cv2.imread(filename, 0)
+        original = cv2.imread(filename, 0)
+        dim = (96, 96)
+        self.image_data = cv2.resize(original, dim, interpolation = cv2.INTER_AREA)
         fig_image, current_ax = plt.subplots()
         plt.imshow(self.image_data, cmap='gray')
         eh = EventHandler(self.filename)
@@ -250,8 +253,8 @@ class PDS_Compute_MTF(object):
         print('mtf50 is %.2f, mtf20 is %.2f'%(mtf50, mtf20))
         return mtf
 
-img_dir = r'/fred/oz138/COS80024/SOFTWARE/Performance-Measurement-of-AI-Assisted-Satellite-Imagery/IQA/MTF_Images'# directory to store the images to compute mtf 
-newpath=r'/fred/oz138/COS80024/SOFTWARE/Performance-Measurement-of-AI-Assisted-Satellite-Imagery/IQA/MTF_Output' #output directory to store the mtf graphs
+img_dir = r'D:\Super-resolution project\EDSR\SOFTWARE\Performance-Measurement-of-AI-Assisted-Satellite-Imagery\IQA\MTF_Images'# directory to store the images to compute mtf 
+newpath= r'D:\Super-resolution project\EDSR\SOFTWARE\Performance-Measurement-of-AI-Assisted-Satellite-Imagery\IQA\MTF_Output' #output directory to store the mtf graphs
 data_path = os.path.join(img_dir,'*g')
 files = glob.glob(data_path)
 

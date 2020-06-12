@@ -81,7 +81,7 @@ figure, imshow(im_h); title('SRCNN Reconstruction');
 figure, imshow(sr_image); %title('color aSRCNN Reconstruction');
 
 imwrite(im_h, ['Y Reconstruction' '.png']);
-imwrite(sr_image, ['color Reconstruction forest' '.png']);
+imwrite(sr_image, ['color Reconstruction' '.png']);
 
 
 
