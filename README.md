@@ -63,3 +63,9 @@ Uncomment line 3 in `demo.sh` under `\edsr\src`. Change the `--dir_data` argumen
 
 Run `demo.sh` using the command `sh demo.sh`
 
+# Generate dataset
+
+This program requires Matlab >= 2017
+
+Create a new directory `\HR_Images` under the `\Generate_dataset` to place the HR images. Run the file `generate_landmass_traintest_set.m`
+
