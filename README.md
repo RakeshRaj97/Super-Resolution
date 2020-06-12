@@ -1,2 +1,3 @@
-# Performance-Measurement-of-AI-Assisted-Satellite-Imagery
-Performance measurement of AI assisted Satellite Imagery_COS80024
+#Image Pre-Processing Techniques
+#1.Data Augmentation
+#2.Image Degradation
