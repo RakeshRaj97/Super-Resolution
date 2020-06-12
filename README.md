@@ -1,3 +1,3 @@
-#Image Pre-Processing Techniques
-#1.Data Augmentation
-#2.Image Degradation
+<p>Image Pre-Processing Techniques</p>
+1.Data Augmentation<br>
+2.Image Degradation<br>
