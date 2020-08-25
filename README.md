@@ -16,7 +16,7 @@ Run the bash script `memnet_env_script(1).sh` to install all the required depend
 
 # Testing the models
 ## EDSR
-Activate the virtual environment `p4` using `source activate p4`
+Activate the virtual environment `p4` using `source activate p4` 
 
 Create a new directory `\test` under `\edsr` to test your own images. Create a new directory `\models` under `\edsr` and place the downloaded models
 
@@ -25,6 +25,10 @@ Uncomment the line 35 in `demo.sh` under `\src`. Change the `--dir_data` argumen
 Run `demo.sh` using the command `sh demo.sh`
 
 The output SR images can be found under `\experiment\test\results` folder
+
+# Output of the trained model
+
+![image](https://user-images.githubusercontent.com/47710229/84050512-3040ff80-a9f1-11ea-857c-2439ed93f78e.png)
 
 ## Memnet
 
